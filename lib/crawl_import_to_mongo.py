@@ -12,8 +12,11 @@ import json
 import yaml
 import sys
 import pymongo
+import os
 
-with open("../config/crawler.yml", "r") as f:
+dirname = os.path.dirname(__file__)
+configname = os.path.join(dirname, '../config/crawler.yml')
+with open(configname, "r") as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 
 user   = config['default']['mongo']['user']

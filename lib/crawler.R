@@ -25,7 +25,7 @@ crawl_each_repo <- function(collections) {
   Sys.setenv(GITHUB_TOKEN=config$github_token)
 
   # Create a cache dir
-  dir.create(paste0(tempdir(),'/crawl'))
+  dir.create(paste0(tempdir(),'/crawl'), showWarnings = F)
   setwd(paste0(tempdir(),'/crawl'))
 
   # The actual crawler is written in Python, shell out to it
@@ -54,7 +54,7 @@ import_json_to_mongo <- function(scans) {
   # Likewise the code that imports the resulting JSON is in Python
   import_repo <- function(org, repo, type) {
     file = if_else(type == 'pulls', 'pull_requests.json', 'issues.json')
-    path = paste0(org,'%',repo,'/', file)
+    path = paste0(tempdir(),'/crawl/',org,'%',repo,'/', file)
 
     if (interactive()) print(paste0("\n\nImporting:",path))
 
