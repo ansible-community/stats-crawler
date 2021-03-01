@@ -1,0 +1,343 @@
+default:
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: amazon.aws
+    Regex: aws|amazon|ec2
+    NewCollection: 'FALSE'
+    MergeKey: amazon
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: ansible_collections_google
+    Regex: google|gce|gcp
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: ansible.windows
+    Regex: windows
+    NewCollection: 'FALSE'
+    MergeKey: windows
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: azure
+    Regex: azure
+    NewCollection: 'FALSE'
+    MergeKey: azure
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: checkpoint
+    Regex: check_?point
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: cisco.asa
+    Regex: network/asa
+    NewCollection: 'FALSE'
+    MergeKey: asa
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.asa
+    Regex: network/asa
+    NewCollection: 'FALSE'
+    MergeKey: asa
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.aws
+    Regex: aws|amazon|ec2
+    NewCollection: 'FALSE'
+    MergeKey: amazon
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.azure
+    Regex: azure
+    NewCollection: 'FALSE'
+    MergeKey: azure
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.cassandra
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.crypto
+    Regex: crypto
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.digitalocean
+    Regex: digital_ocean
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.docker
+    Regex: docker
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.general
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.grafana
+    Regex: grafana
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.kubernetes
+    Regex: kubernetes|k8s
+    NewCollection: 'FALSE'
+    MergeKey: kubernetes
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.kubevirt
+    Regex: kubevirt
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.libvirt
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.molecule
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.mongodb
+    Regex: mongo
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.mysql
+    Regex: mysql
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.network
+    Regex: /network/
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.okd
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.postgresql
+    Regex: postgres
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.proxysql
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.qradar
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.rabbitmq
+    Regex: rabbitmq
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.sops
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.routeros
+    Regex: routeros
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.windows
+    Regex: windows
+    NewCollection: 'FALSE'
+    MergeKey: windows
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.yang
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: community.zabbix
+    Regex: zabbix
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: kubernetes.core
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: kubernetes
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: dellemc_networking.os10
+    Regex: dellos10
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: dellemc_networking.os6
+    Regex: dellos6
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: dellemc_networking.os9
+    Regex: dellos9
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: eos
+    Regex: eos
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: frr
+    Regex: frr
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: hetzner.hcloud
+    Regex: hcloud
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: ibm.spectrum_virtualize
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: ibm_zos_core
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: ibm_zos_ims
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: ios
+    Regex: ios[\W\._]
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: iosxr
+    Regex: iosxr
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: junos
+    Regex: junos
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: netapp
+    Regex: netapp
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: netcommon
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: nxos
+    Regex: nxos
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: openvswitch
+    Regex: ovs
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: pureport
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: skydive
+    Regex: skydive
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: vmware_rest
+    Regex: vmware
+    NewCollection: 'FALSE'
+    MergeKey: vmware
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: vmware
+    Regex: vmware
+    NewCollection: 'FALSE'
+    MergeKey: vmware
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: vyos
+    Regex: vyos
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: containers
+    Repo: ansible-podman-collections
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: openstack
+    Repo: ansible-collections-openstack
+    Regex: openstack
+    NewCollection: 'FALSE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: theforeman
+    Repo: foreman-ansible-modules
+    Regex: ''
+    NewCollection: 'TRUE'
+    MergeKey: ''
