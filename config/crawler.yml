@@ -1,8 +1,0 @@
-# You can define different envs here but the code doesn't support it yet
-default:
-  github_token: 'f52a7fd6dc...' # not a real token
-  mongo:
-    user: test
-    password: test
-    ip: 172.17.0.1  #docker local interface
-    port: "27017"   #python won't concatenate integers, so quote this
