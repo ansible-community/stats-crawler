@@ -13,11 +13,16 @@ import yaml
 import sys
 import pymongo
 import os
+from packaging import version
 
 dirname = os.path.dirname(__file__)
 configname = os.path.join(dirname, '../config/crawler.yml')
-with open(configname, "r") as f:
-    config = yaml.load(f, Loader=yaml.FullLoader)
+if version.parse(yaml.__version__) < version.parse("5"):
+    with open(configname, "r") as f:
+        config = yaml.load(f)
+else:
+    with open(configname, "r") as f:
+        config = yaml.load(f, Loader=yaml.FullLoader)
 
 user   = config['default']['mongo']['user']
 passwd = config['default']['mongo']['password']
