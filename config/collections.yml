@@ -218,8 +218,6 @@ default:
   - Site: https://github.com
     Org: ansible-collections
     Repo: community.rabbitmq
-  - Site: https://github.com
-    Org: ansible-collections
     Regex: rabbitmq
     NewCollection: 'FALSE'
     MergeKey: ''
