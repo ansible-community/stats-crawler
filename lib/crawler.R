@@ -8,10 +8,16 @@ library(mongolite)
 
 read_collections_yaml <- function() {
   # Load the collection list, and convert to a data.frame
-  collections <- config::get(file = here('config/collections.yml'))
-  as.data.frame(t(sapply(collections, rbind))) %>%
-    setNames(c(
-      'Site', 'Org', 'Repo', 'Regex', 'NewCollections', 'MergeKey'))
+  c <- config::get(file = here('config/collections.yml'))
+
+  data.frame(
+    Site           = map_chr(c,'Site'),
+    Org            = map_chr(c,'Org'),
+    Repo           = map_chr(c,'Repo'),
+    Regex          = map_chr(c,'Regex', .default = NA),
+    NewCollections = map_chr(c,'NewCollections', .default = NA),
+    MergeKey       = map_chr(c,'MergeKey', .default = NA)
+  )
 }
 
 crawl_each_repo <- function(collections) {
