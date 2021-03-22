@@ -1,4 +1,4 @@
-# Functions & helpers for the crawler job
+# Functions & helpers for the GitHub crawler job
 
 library(here)
 library(config)

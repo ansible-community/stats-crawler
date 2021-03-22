@@ -35,19 +35,18 @@ flow of the job can be understood.
 
 # Deployment
 
-Currently there is only one task (crawl_github.R) which is to
-be set up in cron manually. Run it with `Rscript path/to/task.R`,
-but be aware that the project uses `renv` and will call `renv::restore`
-at the start of each run to ensure it matches the lockfile.
+Currently there are two tasks (GitHub and Meetup), and they need to be set up in
+cron manually. Run it with `Rscript path/to/task.R`, but be aware that the
+project uses `renv` and will call `renv::restore` at the start of each run to
+ensure it matches the lockfile.
 
-Eventual plan is to have all the tasks represented in a simple
-Ansible playbook which defines a system user and entries in that
-users `crontab` - each new task would need a matching stanza in the
-playbook. This is still TBD.
+Eventual plan is to have all the tasks represented in a simple Ansible playbook
+which defines a system user and entries in that users `crontab` - each new task
+would need a matching stanza in the playbook. This is still TBD.
 
 # Contribution
 
-All contribution is welcoem, please open a PR
+All contribution is welcome, please open a PR
 
 # License
 
