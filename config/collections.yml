@@ -118,6 +118,12 @@ default:
     MergeKey: ''
   - Site: https://github.com
     Org: ansible-collections
+    Repo: community.dns
+    Regex: 
+    NewCollection: 'TRUE'
+    MergeKey: ''
+  - Site: https://github.com
+    Org: ansible-collections
     Repo: community.docker
     Regex: docker
     NewCollection: 'FALSE'
