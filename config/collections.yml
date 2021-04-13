@@ -21,9 +21,6 @@ default:
     Org: ansible-collections
     Repo: arista.eos
   - Site: https://github.com
-    Org: ansible
-    Repo: awx
-  - Site: https://github.com
     Org: ansible-collections
     Repo: azure
     Regex: azure
