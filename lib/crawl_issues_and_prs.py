@@ -164,6 +164,9 @@ PULL_REQUEST_COMMON = '''
         mergeable
         merged
         mergedAt
+        mergedBy {
+          login
+        }
         baseRefName
         commits(first: 100) {
           nodes {
