@@ -35,7 +35,6 @@ default:
     - Ansible-Copenhagen
     - Ansible-Cork-Ireland
     - Ansible-Crete
-    - AnsibleCU
     - Ansible-Dallas
     - Ansible-DC
     - Ansible-Delhi
