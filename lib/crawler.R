@@ -14,9 +14,7 @@ read_collections_yaml <- function() {
     Site           = map_chr(c,'Site'),
     Org            = map_chr(c,'Org'),
     Repo           = map_chr(c,'Repo'),
-    Regex          = map_chr(c,'Regex', .default = NA),
-    NewCollections = map_chr(c,'NewCollections', .default = NA),
-    MergeKey       = map_chr(c,'MergeKey', .default = NA)
+    in_package     = map_chr(c,'in_package', .default = F)
   )
 }
 
