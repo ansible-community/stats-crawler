@@ -355,6 +355,8 @@ default:
     Org: sensu
     Repo: sensu-go-ansible
     in_package: yes
+  # This is servicenow.servicenow which has been deprecated in favor of servicenow.itsm
+  # https://github.com/ansible-community/community-topics/issues/44
   - Site: https://github.com
     Org: ServiceNowITOM
     Repo: servicenow-ansible
@@ -413,16 +415,12 @@ default:
     in_package: no
   - Site: https://github.com
     Org: ansible-collections
-    Repo: collection_template
-    in_package: no
-  - Site: https://github.com
-    Org: ansible-collections
     Repo: community.ciscosmb
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
     Repo: community.dns
-    in_package: no
+    in_package: yes
   - Site: https://github.com
     Org: ansible-collections
     Repo: community.elastic
@@ -501,24 +499,16 @@ default:
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
-    Repo: overview
+    Repo: servicenow.itsm
     in_package: no
   - Site: https://github.com
     Org: ansible-collections
-    Repo: servicenow.itsm
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
-    Repo: splunk.enterprise_security
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
     Repo: symantec.epm
-    in_package: yes
+    in_package: no
   - Site: https://github.com
     Org: ansible-collections
     Repo: trendmicro.deepsec
-    in_package: yes
+    in_package: no
   - Site: https://github.com
     Org: ansible-collections
     Repo: vmware_rest_code_generator
@@ -527,4 +517,12 @@ default:
     Org: ansible-collections
     Repo: vmware.vmware_rest
     in_package: no
-
+  # note: those below are not really community collections
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: collection_template
+    in_package: no
+  - Site: https://github.com
+    Org: ansible-collections
+    Repo: overview
+    in_package: no
