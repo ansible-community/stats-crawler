@@ -265,10 +265,6 @@ default:
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
-    Repo: community.qradar
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
     Repo: ibm.qradar
     in_package: yes
   - Site: https://github.com
@@ -429,10 +425,6 @@ default:
     in_package: no
   - Site: https://github.com
     Org: ansible-collections
-    Repo: community.es
-    in_package: no
-  - Site: https://github.com
-    Org: ansible-collections
     Repo: community.grafana
     in_package: yes
   - Site: https://github.com
@@ -506,10 +498,6 @@ default:
   - Site: https://github.com
     Org: ansible-collections
     Repo: servicenow.itsm
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
-    Repo: splunk.enterprise_security
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
