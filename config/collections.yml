@@ -265,10 +265,6 @@ default:
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
-    Repo: community.qradar
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
     Repo: ibm.qradar
     in_package: yes
   - Site: https://github.com
@@ -398,8 +394,8 @@ default:
     Repo: ansible.utils
     in_package: yes
   - Site: https://github.com
-    Org: ansible-collections
-    Repo: checkpoint
+    Org: CheckPointSW
+    Repo: CheckPointAnsibleMgmtCollection
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
@@ -424,10 +420,6 @@ default:
   - Site: https://github.com
     Org: ansible-collections
     Repo: community.elastic
-    in_package: no
-  - Site: https://github.com
-    Org: ansible-collections
-    Repo: community.es
     in_package: no
   - Site: https://github.com
     Org: ansible-collections
