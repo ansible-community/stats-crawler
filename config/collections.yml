@@ -392,8 +392,8 @@ default:
     Repo: ansible.utils
     in_package: yes
   - Site: https://github.com
-    Org: ansible-collections
-    Repo: checkpoint
+    Org: CheckPointSW
+    Repo: CheckPointAnsibleMgmtCollection
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
