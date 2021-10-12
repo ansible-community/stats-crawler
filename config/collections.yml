@@ -509,12 +509,3 @@ default:
     Org: ansible-collections
     Repo: vmware.vmware_rest
     in_package: no
-  # note: those below are not really community collections
-  - Site: https://github.com
-    Org: ansible-collections
-    Repo: collection_template
-    in_package: no
-  - Site: https://github.com
-    Org: ansible-collections
-    Repo: overview
-    in_package: no
