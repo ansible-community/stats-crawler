@@ -38,11 +38,12 @@ crawl_meetup_events <- function() {
     fields = '{"urlname":1}') %>%
     transmute(group.id = `_id`, urlname)
 
+  possibly_get_events <- possibly(get_events, otherwise = NA)
   events <- groups %>%
     rowwise() %>%
-    mutate(upcoming  = map(urlname, ~get_events(.x, 'upcoming')),
-           past      = map(urlname, ~get_events(.x, 'past')),
-           cancelled = map(urlname, ~get_events(.x, 'cancelled')))
+    mutate(upcoming  = map(urlname, ~possibly_get_events(.x, 'upcoming')),
+           past      = map(urlname, ~possibly_get_events(.x, 'past')),
+           cancelled = map(urlname, ~possibly_get_events(.x, 'cancelled')))
 
   # sanity tests on api data?
   events %>%
