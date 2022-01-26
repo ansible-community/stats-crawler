@@ -85,10 +85,6 @@ default:
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
-    Repo: community.azure
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
     Repo: community.cassandra
     in_package: no
   - Site: https://github.com
@@ -126,10 +122,6 @@ default:
   - Site: https://github.com
     Org: ansible-collections
     Repo: community.hrobot
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
-    Repo: community.kubernetes
     in_package: yes
   - Site: https://github.com
     Org: ansible-collections
@@ -296,10 +288,6 @@ default:
     Repo: netapp
     in_package: yes
   - Site: https://github.com
-    Org: ansible-collections
-    Repo: netapp
-    in_package: yes
-  - Site: https://github.com
     Org: netapp-eseries
     Repo: santricity
     in_package: yes
@@ -334,10 +322,6 @@ default:
   - Site: https://github.com
     Org: ovirt
     Repo: ovirt-ansible-collection
-    in_package: yes
-  - Site: https://github.com
-    Org: ansible-collections
-    Repo: pureport
     in_package: yes
   - Site: https://github.com
     Org: Pure-Storage-Ansible
